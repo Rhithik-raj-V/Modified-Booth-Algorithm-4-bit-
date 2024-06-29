@@ -1,0 +1,525 @@
+# Reading pref.tcl
+# //  Questa Intel FPGA Edition-64
+# //  Version 2021.2 win64 Apr 14 2021
+# //
+# //  Copyright 1991-2021 Mentor Graphics Corporation
+# //  All Rights Reserved.
+# //
+# //  QuestaSim and its associated documentation contain trade
+# //  secrets and commercial or financial information that are the property of
+# //  Mentor Graphics Corporation and are privileged, confidential,
+# //  and exempt from disclosure under the Freedom of Information Act,
+# //  5 U.S.C. Section 552. Furthermore, this information
+# //  is prohibited from disclosure under the Trade Secrets Act,
+# //  18 U.S.C. Section 1905.
+# //
+# do modified_booth_algorithm_4bit_run_msim_rtl_verilog.do
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Questa Intel FPGA Edition-64 vmap 2021.2 Lib Mapping Utility 2021.04 Apr 14 2021
+# vmap work rtl_work 
+# Copying c:/intelfpga/22.1std/questa_fe/win64/../modelsim.ini to modelsim.ini
+# Modifying modelsim.ini
+# 
+# vlog -vlog01compat -work work +incdir+D:/WORK/intel/BOOTH\ ALGORITHM/code {D:/WORK/intel/BOOTH ALGORITHM/code/modified_booth_algorithm_4bit.v}
+# Questa Intel FPGA Edition-64 vlog 2021.2 Compiler 2021.04 Apr 14 2021
+# Start time: 19:47:07 on May 04,2024
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/WORK/intel/BOOTH ALGORITHM/code" D:/WORK/intel/BOOTH ALGORITHM/code/modified_booth_algorithm_4bit.v 
+# -- Compiling module modified_booth_algorithm_4bit
+# 
+# Top level modules:
+# 	modified_booth_algorithm_4bit
+# End time: 19:47:07 on May 04,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+D:/WORK/intel/BOOTH\ ALGORITHM/code {D:/WORK/intel/BOOTH ALGORITHM/code/2s_complement_mod.v}
+# Questa Intel FPGA Edition-64 vlog 2021.2 Compiler 2021.04 Apr 14 2021
+# Start time: 19:47:07 on May 04,2024
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/WORK/intel/BOOTH ALGORITHM/code" D:/WORK/intel/BOOTH ALGORITHM/code/2s_complement_mod.v 
+# -- Compiling module m_2s_complement_mod
+# 
+# Top level modules:
+# 	m_2s_complement_mod
+# End time: 19:47:07 on May 04,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+# vlog -vlog01compat -work work +incdir+D:/WORK/intel/BOOTH\ ALGORITHM/code {D:/WORK/intel/BOOTH ALGORITHM/code/booth_tb.v}
+# Questa Intel FPGA Edition-64 vlog 2021.2 Compiler 2021.04 Apr 14 2021
+# Start time: 19:47:07 on May 04,2024
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/WORK/intel/BOOTH ALGORITHM/code" D:/WORK/intel/BOOTH ALGORITHM/code/booth_tb.v 
+# -- Compiling module booth_tb
+# 
+# Top level modules:
+# 	booth_tb
+# End time: 19:47:07 on May 04,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cyclonev_ver -L cyclonev_hssi_ver -L cyclonev_pcie_hip_ver -L rtl_work -L work -voptargs="+acc"  booth_tb
+# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cyclonev_ver -L cyclonev_hssi_ver -L cyclonev_pcie_hip_ver -L rtl_work -L work -voptargs=""+acc"" booth_tb 
+# Start time: 19:47:08 on May 04,2024
+# ** Note: (vsim-3812) Design is being optimized...
+# ** Note: (vopt-143) Recognized 2 FSMs in module "modified_booth_algorithm_4bit(fast)".
+# ** Note: (vopt-143) Recognized 1 FSM in module "m_2s_complement_mod(fast__2)".
+# ** Note: (vopt-143) Recognized 1 FSM in module "m_2s_complement_mod(fast__1)".
+# ** Note: (vopt-143) Recognized 1 FSM in module "m_2s_complement_mod(fast)".
+# Loading work.booth_tb(fast)
+# Loading work.modified_booth_algorithm_4bit(fast)
+# Loading work.m_2s_complement_mod(fast)
+# Loading work.m_2s_complement_mod(fast__1)
+# Loading work.m_2s_complement_mod(fast__2)
+# 
+# add wave *
+# view structure
+# .main_pane.structure.interior.cs.body.struct
+# view signals
+# .main_pane.objects.interior.cs.body.tree
+# run -all
+add wave -position insertpoint  \
+sim:/booth_tb/DUT/WAIT \
+sim:/booth_tb/DUT/CHECK_DATA1 \
+sim:/booth_tb/DUT/CHECK_DATA2 \
+sim:/booth_tb/DUT/NO_TWOS_C \
+sim:/booth_tb/DUT/TWOS_C \
+sim:/booth_tb/DUT/ST_CH \
+sim:/booth_tb/DUT/LUT \
+sim:/booth_tb/DUT/RECODE_0 \
+sim:/booth_tb/DUT/RECODE_P1 \
+sim:/booth_tb/DUT/RECODE_N1_1 \
+sim:/booth_tb/DUT/RECODE_N1 \
+sim:/booth_tb/DUT/RECODE_P2 \
+sim:/booth_tb/DUT/RECODE_N2_1 \
+sim:/booth_tb/DUT/RECODE_N2 \
+sim:/booth_tb/DUT/REC_SEL \
+sim:/booth_tb/DUT/REC_OPTS \
+sim:/booth_tb/DUT/ADDER \
+sim:/booth_tb/DUT/CHK_SGN \
+sim:/booth_tb/DUT/END_FOR_NEG \
+sim:/booth_tb/DUT/clock \
+sim:/booth_tb/DUT/rst \
+sim:/booth_tb/DUT/in_valid \
+sim:/booth_tb/DUT/A_in \
+sim:/booth_tb/DUT/B_in \
+sim:/booth_tb/DUT/w_Output \
+sim:/booth_tb/DUT/out_valid \
+sim:/booth_tb/DUT/lut \
+sim:/booth_tb/DUT/A \
+sim:/booth_tb/DUT/B \
+sim:/booth_tb/DUT/recode_store \
+sim:/booth_tb/DUT/main_stm \
+sim:/booth_tb/DUT/main_stm_nxt \
+sim:/booth_tb/DUT/main_stm_nxt_2 \
+sim:/booth_tb/DUT/main_stm_nxt_2s \
+sim:/booth_tb/DUT/in_tog_5 \
+sim:/booth_tb/DUT/in_tog_valid_5 \
+sim:/booth_tb/DUT/mod_busy_5 \
+sim:/booth_tb/DUT/out_tog_5 \
+sim:/booth_tb/DUT/out_tog_valid_5 \
+sim:/booth_tb/DUT/in_tog_6 \
+sim:/booth_tb/DUT/in_tog_valid_6 \
+sim:/booth_tb/DUT/mod_busy_6 \
+sim:/booth_tb/DUT/out_tog_6 \
+sim:/booth_tb/DUT/out_tog_valid_6 \
+sim:/booth_tb/DUT/in_tog_10 \
+sim:/booth_tb/DUT/in_tog_valid_10 \
+sim:/booth_tb/DUT/mod_busy_10 \
+sim:/booth_tb/DUT/out_tog_10 \
+sim:/booth_tb/DUT/out_tog_valid_10 \
+sim:/booth_tb/DUT/A_TWOS_Complement \
+sim:/booth_tb/DUT/B_TWOS_Complement \
+sim:/booth_tb/DUT/Modified_data \
+sim:/booth_tb/DUT/data_in_count_for_2sc \
+sim:/booth_tb/DUT/layer1 \
+sim:/booth_tb/DUT/layer2 \
+sim:/booth_tb/DUT/layer3 \
+sim:/booth_tb/DUT/r_2sc_5_flg \
+sim:/booth_tb/DUT/r_2sc_6_flg \
+sim:/booth_tb/DUT/r_2sc_10_flg \
+sim:/booth_tb/DUT/val_5b_layer \
+sim:/booth_tb/DUT/val_6b_layer \
+sim:/booth_tb/DUT/val_10b_layer \
+sim:/booth_tb/DUT/val_5b_layer_out \
+sim:/booth_tb/DUT/val_6b_layer_out \
+sim:/booth_tb/DUT/val_10b_layer_out \
+sim:/booth_tb/DUT/layer1_flg \
+sim:/booth_tb/DUT/layer2_flg \
+sim:/booth_tb/DUT/layer3_flg \
+sim:/booth_tb/DUT/recode_val \
+sim:/booth_tb/DUT/recode_count \
+sim:/booth_tb/DUT/layer_sum
+restart
+# ** Note: (vsim-8009) Loading existing optimized design _opt
+# Loading work.booth_tb(fast)
+# Loading work.modified_booth_algorithm_4bit(fast)
+# Loading work.m_2s_complement_mod(fast)
+# Loading work.m_2s_complement_mod(fast__1)
+# Loading work.m_2s_complement_mod(fast__2)
+run -all
+vcom
+vlog -reportprogress 300 -work work {D:/WORK/intel/BOOTH ALGORITHM/code/2s_complement_mod.v}
+# Questa Intel FPGA Edition-64 vlog 2021.2 Compiler 2021.04 Apr 14 2021
+# Start time: 20:13:25 on May 04,2024
+# vlog -reportprogress 300 -work work D:/WORK/intel/BOOTH ALGORITHM/code/2s_complement_mod.v 
+# -- Compiling module m_2s_complement_mod
+# 
+# Top level modules:
+# 	m_2s_complement_mod
+# End time: 20:13:25 on May 04,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vlog -reportprogress 300 -work work {D:/WORK/intel/BOOTH ALGORITHM/code/modified_booth_algorithm_4bit.v}
+# Questa Intel FPGA Edition-64 vlog 2021.2 Compiler 2021.04 Apr 14 2021
+# Start time: 20:13:27 on May 04,2024
+# vlog -reportprogress 300 -work work D:/WORK/intel/BOOTH ALGORITHM/code/modified_booth_algorithm_4bit.v 
+# -- Compiling module modified_booth_algorithm_4bit
+# 
+# Top level modules:
+# 	modified_booth_algorithm_4bit
+# End time: 20:13:27 on May 04,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vlog -reportprogress 300 -work work {D:/WORK/intel/BOOTH ALGORITHM/code/booth_tb.v}
+# Questa Intel FPGA Edition-64 vlog 2021.2 Compiler 2021.04 Apr 14 2021
+# Start time: 20:13:30 on May 04,2024
+# vlog -reportprogress 300 -work work D:/WORK/intel/BOOTH ALGORITHM/code/booth_tb.v 
+# -- Compiling module booth_tb
+# 
+# Top level modules:
+# 	booth_tb
+# End time: 20:13:30 on May 04,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+restart
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# ** Note: (vopt-143) Recognized 2 FSMs in module "modified_booth_algorithm_4bit(fast)".
+# ** Note: (vopt-143) Recognized 1 FSM in module "m_2s_complement_mod(fast__2)".
+# ** Note: (vopt-143) Recognized 1 FSM in module "m_2s_complement_mod(fast__1)".
+# ** Note: (vopt-143) Recognized 1 FSM in module "m_2s_complement_mod(fast)".
+# Loading work.booth_tb(fast)
+# Loading work.modified_booth_algorithm_4bit(fast)
+# Loading work.m_2s_complement_mod(fast)
+# Loading work.m_2s_complement_mod(fast__1)
+# Loading work.m_2s_complement_mod(fast__2)
+run -all
+vcom
+vlog -reportprogress 300 -work work {D:/WORK/intel/BOOTH ALGORITHM/code/booth_tb.v}
+# Questa Intel FPGA Edition-64 vlog 2021.2 Compiler 2021.04 Apr 14 2021
+# Start time: 20:16:01 on May 04,2024
+# vlog -reportprogress 300 -work work D:/WORK/intel/BOOTH ALGORITHM/code/booth_tb.v 
+# -- Compiling module booth_tb
+# 
+# Top level modules:
+# 	booth_tb
+# End time: 20:16:01 on May 04,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+restart
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# Loading work.booth_tb(fast)
+# Loading work.modified_booth_algorithm_4bit(fast)
+# Loading work.m_2s_complement_mod(fast)
+# Loading work.m_2s_complement_mod(fast__1)
+# Loading work.m_2s_complement_mod(fast__2)
+run -all
+vcom
+vlog -reportprogress 300 -work work {D:/WORK/intel/BOOTH ALGORITHM/code/modified_booth_algorithm_4bit.v}
+# Questa Intel FPGA Edition-64 vlog 2021.2 Compiler 2021.04 Apr 14 2021
+# Start time: 20:28:36 on May 04,2024
+# vlog -reportprogress 300 -work work D:/WORK/intel/BOOTH ALGORITHM/code/modified_booth_algorithm_4bit.v 
+# -- Compiling module modified_booth_algorithm_4bit
+# 
+# Top level modules:
+# 	modified_booth_algorithm_4bit
+# End time: 20:28:36 on May 04,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vlog -reportprogress 300 -work work {D:/WORK/intel/BOOTH ALGORITHM/code/booth_tb.v}
+# Questa Intel FPGA Edition-64 vlog 2021.2 Compiler 2021.04 Apr 14 2021
+# Start time: 20:28:37 on May 04,2024
+# vlog -reportprogress 300 -work work D:/WORK/intel/BOOTH ALGORITHM/code/booth_tb.v 
+# -- Compiling module booth_tb
+# 
+# Top level modules:
+# 	booth_tb
+# End time: 20:28:37 on May 04,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vlog -reportprogress 300 -work work {D:/WORK/intel/BOOTH ALGORITHM/code/2s_complement_mod.v}
+# Questa Intel FPGA Edition-64 vlog 2021.2 Compiler 2021.04 Apr 14 2021
+# Start time: 20:28:38 on May 04,2024
+# vlog -reportprogress 300 -work work D:/WORK/intel/BOOTH ALGORITHM/code/2s_complement_mod.v 
+# -- Compiling module m_2s_complement_mod
+# 
+# Top level modules:
+# 	m_2s_complement_mod
+# End time: 20:28:38 on May 04,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+restart
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# ** Note: (vopt-143) Recognized 2 FSMs in module "modified_booth_algorithm_4bit(fast)".
+# Loading work.booth_tb(fast)
+# Loading work.modified_booth_algorithm_4bit(fast)
+# Loading work.m_2s_complement_mod(fast)
+# Loading work.m_2s_complement_mod(fast__1)
+# Loading work.m_2s_complement_mod(fast__2)
+run -all
+vcom
+vlog -reportprogress 300 -work work {D:/WORK/intel/BOOTH ALGORITHM/code/modified_booth_algorithm_4bit.v}
+# Questa Intel FPGA Edition-64 vlog 2021.2 Compiler 2021.04 Apr 14 2021
+# Start time: 21:06:08 on May 04,2024
+# vlog -reportprogress 300 -work work D:/WORK/intel/BOOTH ALGORITHM/code/modified_booth_algorithm_4bit.v 
+# -- Compiling module modified_booth_algorithm_4bit
+# 
+# Top level modules:
+# 	modified_booth_algorithm_4bit
+# End time: 21:06:08 on May 04,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vlog -reportprogress 300 -work work {D:/WORK/intel/BOOTH ALGORITHM/code/booth_tb.v}
+# Questa Intel FPGA Edition-64 vlog 2021.2 Compiler 2021.04 Apr 14 2021
+# Start time: 21:06:09 on May 04,2024
+# vlog -reportprogress 300 -work work D:/WORK/intel/BOOTH ALGORITHM/code/booth_tb.v 
+# -- Compiling module booth_tb
+# 
+# Top level modules:
+# 	booth_tb
+# End time: 21:06:09 on May 04,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vlog -reportprogress 300 -work work {D:/WORK/intel/BOOTH ALGORITHM/code/2s_complement_mod.v}
+# Questa Intel FPGA Edition-64 vlog 2021.2 Compiler 2021.04 Apr 14 2021
+# Start time: 21:06:10 on May 04,2024
+# vlog -reportprogress 300 -work work D:/WORK/intel/BOOTH ALGORITHM/code/2s_complement_mod.v 
+# -- Compiling module m_2s_complement_mod
+# 
+# Top level modules:
+# 	m_2s_complement_mod
+# End time: 21:06:10 on May 04,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+restart
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# ** Note: (vopt-143) Recognized 2 FSMs in module "modified_booth_algorithm_4bit(fast)".
+# Loading work.booth_tb(fast)
+# Loading work.modified_booth_algorithm_4bit(fast)
+# Loading work.m_2s_complement_mod(fast)
+# Loading work.m_2s_complement_mod(fast__1)
+# Loading work.m_2s_complement_mod(fast__2)
+run -all
+vcom
+vlog -reportprogress 300 -work work {D:/WORK/intel/BOOTH ALGORITHM/code/modified_booth_algorithm_4bit.v}
+# Questa Intel FPGA Edition-64 vlog 2021.2 Compiler 2021.04 Apr 14 2021
+# Start time: 21:08:23 on May 04,2024
+# vlog -reportprogress 300 -work work D:/WORK/intel/BOOTH ALGORITHM/code/modified_booth_algorithm_4bit.v 
+# -- Compiling module modified_booth_algorithm_4bit
+# 
+# Top level modules:
+# 	modified_booth_algorithm_4bit
+# End time: 21:08:23 on May 04,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vlog -reportprogress 300 -work work {D:/WORK/intel/BOOTH ALGORITHM/code/booth_tb.v}
+# Questa Intel FPGA Edition-64 vlog 2021.2 Compiler 2021.04 Apr 14 2021
+# Start time: 21:08:24 on May 04,2024
+# vlog -reportprogress 300 -work work D:/WORK/intel/BOOTH ALGORITHM/code/booth_tb.v 
+# -- Compiling module booth_tb
+# 
+# Top level modules:
+# 	booth_tb
+# End time: 21:08:24 on May 04,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vlog -reportprogress 300 -work work {D:/WORK/intel/BOOTH ALGORITHM/code/2s_complement_mod.v}
+# Questa Intel FPGA Edition-64 vlog 2021.2 Compiler 2021.04 Apr 14 2021
+# Start time: 21:08:25 on May 04,2024
+# vlog -reportprogress 300 -work work D:/WORK/intel/BOOTH ALGORITHM/code/2s_complement_mod.v 
+# -- Compiling module m_2s_complement_mod
+# 
+# Top level modules:
+# 	m_2s_complement_mod
+# End time: 21:08:25 on May 04,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+restart
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# ** Note: (vopt-143) Recognized 2 FSMs in module "modified_booth_algorithm_4bit(fast)".
+# Loading work.booth_tb(fast)
+# Loading work.modified_booth_algorithm_4bit(fast)
+# Loading work.m_2s_complement_mod(fast)
+# Loading work.m_2s_complement_mod(fast__1)
+# Loading work.m_2s_complement_mod(fast__2)
+run -all
+vcom
+vlog -reportprogress 300 -work work {D:/WORK/intel/BOOTH ALGORITHM/code/modified_booth_algorithm_4bit.v}
+# Questa Intel FPGA Edition-64 vlog 2021.2 Compiler 2021.04 Apr 14 2021
+# Start time: 21:14:13 on May 04,2024
+# vlog -reportprogress 300 -work work D:/WORK/intel/BOOTH ALGORITHM/code/modified_booth_algorithm_4bit.v 
+# -- Compiling module modified_booth_algorithm_4bit
+# 
+# Top level modules:
+# 	modified_booth_algorithm_4bit
+# End time: 21:14:13 on May 04,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vlog -reportprogress 300 -work work {D:/WORK/intel/BOOTH ALGORITHM/code/booth_tb.v}
+# Questa Intel FPGA Edition-64 vlog 2021.2 Compiler 2021.04 Apr 14 2021
+# Start time: 21:14:15 on May 04,2024
+# vlog -reportprogress 300 -work work D:/WORK/intel/BOOTH ALGORITHM/code/booth_tb.v 
+# -- Compiling module booth_tb
+# 
+# Top level modules:
+# 	booth_tb
+# End time: 21:14:15 on May 04,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vlog -reportprogress 300 -work work {D:/WORK/intel/BOOTH ALGORITHM/code/2s_complement_mod.v}
+# Questa Intel FPGA Edition-64 vlog 2021.2 Compiler 2021.04 Apr 14 2021
+# Start time: 21:14:16 on May 04,2024
+# vlog -reportprogress 300 -work work D:/WORK/intel/BOOTH ALGORITHM/code/2s_complement_mod.v 
+# -- Compiling module m_2s_complement_mod
+# 
+# Top level modules:
+# 	m_2s_complement_mod
+# End time: 21:14:16 on May 04,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+restart
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# Loading work.booth_tb(fast)
+# Loading work.modified_booth_algorithm_4bit(fast)
+# Loading work.m_2s_complement_mod(fast)
+# Loading work.m_2s_complement_mod(fast__1)
+# Loading work.m_2s_complement_mod(fast__2)
+run -all
+# Causality operation skipped due to absence of debug database file
+vcom
+vlog -reportprogress 300 -work work {D:/WORK/intel/BOOTH ALGORITHM/code/booth_tb.v}
+# Questa Intel FPGA Edition-64 vlog 2021.2 Compiler 2021.04 Apr 14 2021
+# Start time: 21:16:37 on May 04,2024
+# vlog -reportprogress 300 -work work D:/WORK/intel/BOOTH ALGORITHM/code/booth_tb.v 
+# -- Compiling module booth_tb
+# 
+# Top level modules:
+# 	booth_tb
+# End time: 21:16:37 on May 04,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+restart
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# Loading work.booth_tb(fast)
+# Loading work.modified_booth_algorithm_4bit(fast)
+# Loading work.m_2s_complement_mod(fast)
+# Loading work.m_2s_complement_mod(fast__1)
+# Loading work.m_2s_complement_mod(fast__2)
+run -all
+vlog -reportprogress 300 -work work {D:/WORK/intel/BOOTH ALGORITHM/code/booth_tb.v}
+# Questa Intel FPGA Edition-64 vlog 2021.2 Compiler 2021.04 Apr 14 2021
+# Start time: 21:19:43 on May 04,2024
+# vlog -reportprogress 300 -work work D:/WORK/intel/BOOTH ALGORITHM/code/booth_tb.v 
+# -- Compiling module booth_tb
+# 
+# Top level modules:
+# 	booth_tb
+# End time: 21:19:43 on May 04,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+restart
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# Loading work.booth_tb(fast)
+# Loading work.modified_booth_algorithm_4bit(fast)
+# Loading work.m_2s_complement_mod(fast)
+# Loading work.m_2s_complement_mod(fast__1)
+# Loading work.m_2s_complement_mod(fast__2)
+run -all
+vlog -reportprogress 300 -work work {D:/WORK/intel/BOOTH ALGORITHM/code/booth_tb.v}
+# Questa Intel FPGA Edition-64 vlog 2021.2 Compiler 2021.04 Apr 14 2021
+# Start time: 21:20:51 on May 04,2024
+# vlog -reportprogress 300 -work work D:/WORK/intel/BOOTH ALGORITHM/code/booth_tb.v 
+# -- Compiling module booth_tb
+# 
+# Top level modules:
+# 	booth_tb
+# End time: 21:20:51 on May 04,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+restart
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# Loading work.booth_tb(fast)
+# Loading work.modified_booth_algorithm_4bit(fast)
+# Loading work.m_2s_complement_mod(fast)
+# Loading work.m_2s_complement_mod(fast__1)
+# Loading work.m_2s_complement_mod(fast__2)
+run -all
+vlog -reportprogress 300 -work work {D:/WORK/intel/BOOTH ALGORITHM/code/booth_tb.v}
+# Questa Intel FPGA Edition-64 vlog 2021.2 Compiler 2021.04 Apr 14 2021
+# Start time: 21:22:36 on May 04,2024
+# vlog -reportprogress 300 -work work D:/WORK/intel/BOOTH ALGORITHM/code/booth_tb.v 
+# -- Compiling module booth_tb
+# 
+# Top level modules:
+# 	booth_tb
+# End time: 21:22:36 on May 04,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+restart
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# Loading work.booth_tb(fast)
+# Loading work.modified_booth_algorithm_4bit(fast)
+# Loading work.m_2s_complement_mod(fast)
+# Loading work.m_2s_complement_mod(fast__1)
+# Loading work.m_2s_complement_mod(fast__2)
+run -all
+vcom
+vlog -reportprogress 300 -work work {D:/WORK/intel/BOOTH ALGORITHM/code/modified_booth_algorithm_4bit.v}
+# Questa Intel FPGA Edition-64 vlog 2021.2 Compiler 2021.04 Apr 14 2021
+# Start time: 21:35:06 on May 04,2024
+# vlog -reportprogress 300 -work work D:/WORK/intel/BOOTH ALGORITHM/code/modified_booth_algorithm_4bit.v 
+# -- Compiling module modified_booth_algorithm_4bit
+# ** Error: (vlog-13069) D:/WORK/intel/BOOTH ALGORITHM/code/modified_booth_algorithm_4bit.v(188): near "layer2": syntax error, unexpected IDENTIFIER, expecting ';'.
+# End time: 21:35:06 on May 04,2024, Elapsed time: 0:00:00
+# Errors: 1, Warnings: 0
+vcom
+vlog -reportprogress 300 -work work {D:/WORK/intel/BOOTH ALGORITHM/code/modified_booth_algorithm_4bit.v}
+# Questa Intel FPGA Edition-64 vlog 2021.2 Compiler 2021.04 Apr 14 2021
+# Start time: 21:35:27 on May 04,2024
+# vlog -reportprogress 300 -work work D:/WORK/intel/BOOTH ALGORITHM/code/modified_booth_algorithm_4bit.v 
+# -- Compiling module modified_booth_algorithm_4bit
+# ** Error: D:/WORK/intel/BOOTH ALGORITHM/code/modified_booth_algorithm_4bit.v(181): (vlog-2110) Illegal reference to net "out_tog_5".
+# ** Error: D:/WORK/intel/BOOTH ALGORITHM/code/modified_booth_algorithm_4bit.v(182): (vlog-2110) Illegal reference to net "out_tog_6".
+# ** Error: D:/WORK/intel/BOOTH ALGORITHM/code/modified_booth_algorithm_4bit.v(183): (vlog-2110) Illegal reference to net "out_tog_10".
+# End time: 21:35:27 on May 04,2024, Elapsed time: 0:00:00
+# Errors: 3, Warnings: 0
+vlog -reportprogress 300 -work work {D:/WORK/intel/BOOTH ALGORITHM/code/modified_booth_algorithm_4bit.v}
+# Questa Intel FPGA Edition-64 vlog 2021.2 Compiler 2021.04 Apr 14 2021
+# Start time: 21:35:47 on May 04,2024
+# vlog -reportprogress 300 -work work D:/WORK/intel/BOOTH ALGORITHM/code/modified_booth_algorithm_4bit.v 
+# -- Compiling module modified_booth_algorithm_4bit
+# 
+# Top level modules:
+# 	modified_booth_algorithm_4bit
+# End time: 21:35:47 on May 04,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom
+vlog -reportprogress 300 -work work {D:/WORK/intel/BOOTH ALGORITHM/code/modified_booth_algorithm_4bit.v}
+# Questa Intel FPGA Edition-64 vlog 2021.2 Compiler 2021.04 Apr 14 2021
+# Start time: 21:35:52 on May 04,2024
+# vlog -reportprogress 300 -work work D:/WORK/intel/BOOTH ALGORITHM/code/modified_booth_algorithm_4bit.v 
+# -- Compiling module modified_booth_algorithm_4bit
+# 
+# Top level modules:
+# 	modified_booth_algorithm_4bit
+# End time: 21:35:52 on May 04,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vlog -reportprogress 300 -work work {D:/WORK/intel/BOOTH ALGORITHM/code/booth_tb.v}
+# Questa Intel FPGA Edition-64 vlog 2021.2 Compiler 2021.04 Apr 14 2021
+# Start time: 21:35:53 on May 04,2024
+# vlog -reportprogress 300 -work work D:/WORK/intel/BOOTH ALGORITHM/code/booth_tb.v 
+# -- Compiling module booth_tb
+# 
+# Top level modules:
+# 	booth_tb
+# End time: 21:35:53 on May 04,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vlog -reportprogress 300 -work work {D:/WORK/intel/BOOTH ALGORITHM/code/2s_complement_mod.v}
+# Questa Intel FPGA Edition-64 vlog 2021.2 Compiler 2021.04 Apr 14 2021
+# Start time: 21:35:58 on May 04,2024
+# vlog -reportprogress 300 -work work D:/WORK/intel/BOOTH ALGORITHM/code/2s_complement_mod.v 
+# -- Compiling module m_2s_complement_mod
+# 
+# Top level modules:
+# 	m_2s_complement_mod
+# End time: 21:35:59 on May 04,2024, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+restart
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# ** Note: (vopt-143) Recognized 2 FSMs in module "modified_booth_algorithm_4bit(fast)".
+# Loading work.booth_tb(fast)
+# Loading work.modified_booth_algorithm_4bit(fast)
+# Loading work.m_2s_complement_mod(fast)
+# Loading work.m_2s_complement_mod(fast__1)
+# Loading work.m_2s_complement_mod(fast__2)
+run -all
+# End time: 10:41:15 on May 05,2024, Elapsed time: 14:54:07
+# Errors: 0, Warnings: 0

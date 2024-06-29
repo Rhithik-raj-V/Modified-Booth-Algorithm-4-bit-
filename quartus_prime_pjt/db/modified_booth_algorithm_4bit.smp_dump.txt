@@ -1,0 +1,65 @@
+
+State Machine - |modified_booth_algorithm_4bit|main_stm_nxt_2s
+Name main_stm_nxt_2s.RECODE_N1 main_stm_nxt_2s.LUT main_stm_nxt_2s.CHECK_DATA2 main_stm_nxt_2s.00000 main_stm_nxt_2s.END_FOR_NEG main_stm_nxt_2s.RECODE_N2 
+main_stm_nxt_2s.00000 0 0 0 0 0 0 
+main_stm_nxt_2s.CHECK_DATA2 0 0 1 1 0 0 
+main_stm_nxt_2s.LUT 0 1 0 1 0 0 
+main_stm_nxt_2s.RECODE_N1 1 0 0 1 0 0 
+main_stm_nxt_2s.RECODE_N2 0 0 0 1 0 1 
+main_stm_nxt_2s.END_FOR_NEG 0 0 0 1 1 0 
+
+State Machine - |modified_booth_algorithm_4bit|main_stm_nxt_2
+Name main_stm_nxt_2.RECODE_N1 main_stm_nxt_2.00000 main_stm_nxt_2.END_FOR_NEG main_stm_nxt_2.RECODE_N2 
+main_stm_nxt_2.00000 0 0 0 0 
+main_stm_nxt_2.RECODE_N1 1 1 0 0 
+main_stm_nxt_2.RECODE_N2 0 1 0 1 
+main_stm_nxt_2.END_FOR_NEG 0 1 1 0 
+
+State Machine - |modified_booth_algorithm_4bit|main_stm_nxt
+Name main_stm_nxt.00000 main_stm_nxt.ADDER main_stm_nxt.REC_SEL 
+main_stm_nxt.00000 0 0 0 
+main_stm_nxt.REC_SEL 1 0 1 
+main_stm_nxt.ADDER 1 1 0 
+
+State Machine - |modified_booth_algorithm_4bit|main_stm
+Name main_stm.END_FOR_NEG main_stm.CHK_SGN main_stm.ADDER main_stm.REC_OPTS main_stm.REC_SEL main_stm.RECODE_N2 main_stm.RECODE_N2_1 main_stm.RECODE_P2 main_stm.RECODE_N1 main_stm.RECODE_N1_1 main_stm.RECODE_P1 main_stm.RECODE_0 main_stm.LUT main_stm.ST_CH main_stm.TWOS_C main_stm.NO_TWOS_C main_stm.CHECK_DATA2 main_stm.CHECK_DATA1 main_stm.WAIT 
+main_stm.WAIT 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+main_stm.CHECK_DATA1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 1 
+main_stm.CHECK_DATA2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 1 
+main_stm.NO_TWOS_C 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 1 
+main_stm.TWOS_C 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 1 
+main_stm.ST_CH 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 1 
+main_stm.LUT 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 1 
+main_stm.RECODE_0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 1 
+main_stm.RECODE_P1 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 1 
+main_stm.RECODE_N1_1 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 1 
+main_stm.RECODE_N1 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 1 
+main_stm.RECODE_P2 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 1 
+main_stm.RECODE_N2_1 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 1 
+main_stm.RECODE_N2 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 1 
+main_stm.REC_SEL 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 1 
+main_stm.REC_OPTS 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 
+main_stm.ADDER 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 
+main_stm.CHK_SGN 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 
+main_stm.END_FOR_NEG 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 
+
+State Machine - |modified_booth_algorithm_4bit|m_2s_complement_mod:TWOS_Compl_10bit|tog_stm
+Name tog_stm.FIN tog_stm.TOGG2 tog_stm.TOGG tog_stm.WAIT 
+tog_stm.WAIT 0 0 0 0 
+tog_stm.TOGG 0 0 1 1 
+tog_stm.TOGG2 0 1 0 1 
+tog_stm.FIN 1 0 0 1 
+
+State Machine - |modified_booth_algorithm_4bit|m_2s_complement_mod:TWOS_Compl_6bit|tog_stm
+Name tog_stm.FIN tog_stm.TOGG2 tog_stm.TOGG tog_stm.WAIT 
+tog_stm.WAIT 0 0 0 0 
+tog_stm.TOGG 0 0 1 1 
+tog_stm.TOGG2 0 1 0 1 
+tog_stm.FIN 1 0 0 1 
+
+State Machine - |modified_booth_algorithm_4bit|m_2s_complement_mod:TWOS_Compl_5bit|tog_stm
+Name tog_stm.FIN tog_stm.TOGG2 tog_stm.TOGG tog_stm.WAIT 
+tog_stm.WAIT 0 0 0 0 
+tog_stm.TOGG 0 0 1 1 
+tog_stm.TOGG2 0 1 0 1 
+tog_stm.FIN 1 0 0 1 

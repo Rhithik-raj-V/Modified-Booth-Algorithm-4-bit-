@@ -1,0 +1,99 @@
+m255
+K4
+z2
+Z0 !s99 nomlopt
+R0
+R0
+R0
+R0
+R0
+R0
+R0
+R0
+R0
+R0
+R0
+!s11f vlog 2021.2 2021.04, Apr 14 2021
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z1 dD:/WORK/intel/BOOTH ALGORITHM/simulation/questa
+T_opt
+!s110 1714838764
+VIJ<YFTBWh[1X<LLifIe@z3
+04 8 4 work booth_tb fast 0
+=13-6e244fcbb920-66365ceb-390-3b54
+!s124 OEM25U5 
+o-quiet -auto_acc_if_foreign -work work -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cyclonev_ver -L cyclonev_hssi_ver -L cyclonev_pcie_hip_ver -L rtl_work -L work +acc
+Z2 tCvgOpt 0
+n@_opt
+OL;O;2021.2;73
+vbooth_tb
+!s110 1714838753
+!i10b 1
+!s100 je?fh3BzPXW6kZ;^2e2P?0
+IWCc@fZnZR8Tg]7BjZzMdI1
+R1
+w1714837946
+8D:/WORK/intel/BOOTH ALGORITHM/code/booth_tb.v
+FD:/WORK/intel/BOOTH ALGORITHM/code/booth_tb.v
+!i122 25
+L0 2 39
+Z3 VDg1SIo80bB@j0V0VzS_@n1
+Z4 OL;L;2021.2;73
+r1
+!s85 0
+31
+!s108 1714838753.000000
+!s107 D:/WORK/intel/BOOTH ALGORITHM/code/booth_tb.v|
+!s90 -reportprogress|300|-work|work|D:/WORK/intel/BOOTH ALGORITHM/code/booth_tb.v|
+!i113 0
+Z5 o-work work -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+R2
+vm_2s_complement_mod
+!s110 1714838759
+!i10b 1
+!s100 2HXd7k?=WLAk?`61dLlAd3
+ILT>`BPBR<Lj7Y99m1EA>O3
+R1
+w1714830494
+8D:/WORK/intel/BOOTH ALGORITHM/code/2s_complement_mod.v
+FD:/WORK/intel/BOOTH ALGORITHM/code/2s_complement_mod.v
+!i122 26
+L0 1 52
+R3
+R4
+r1
+!s85 0
+31
+!s108 1714838758.000000
+!s107 D:/WORK/intel/BOOTH ALGORITHM/code/2s_complement_mod.v|
+!s90 -reportprogress|300|-work|work|D:/WORK/intel/BOOTH ALGORITHM/code/2s_complement_mod.v|
+!i113 0
+R5
+R2
+vmodified_booth_algorithm_4bit
+!s110 1714838752
+!i10b 1
+!s100 WMd>UGUMkcEQiK:3BeZk12
+I=MB5JYUb2`=U_=3TAnOK33
+R1
+w1714838744
+8D:/WORK/intel/BOOTH ALGORITHM/code/modified_booth_algorithm_4bit.v
+FD:/WORK/intel/BOOTH ALGORITHM/code/modified_booth_algorithm_4bit.v
+!i122 24
+L0 1 469
+R3
+R4
+r1
+!s85 0
+31
+!s108 1714838752.000000
+!s107 D:/WORK/intel/BOOTH ALGORITHM/code/modified_booth_algorithm_4bit.v|
+!s90 -reportprogress|300|-work|work|D:/WORK/intel/BOOTH ALGORITHM/code/modified_booth_algorithm_4bit.v|
+!i113 0
+R5
+R2
